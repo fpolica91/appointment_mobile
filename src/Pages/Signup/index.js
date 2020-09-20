@@ -5,13 +5,13 @@ import {
   Image,
   Platform,
   ScrollView,
-  Text,
 } from 'react-native'
 import Icon from 'react-native-vector-icons/Feather'
 import { Form } from '@unform/mobile'
 import { Container, Title, BackToSignIn, BackToSignInText } from './styles'
 import LogoImage from '../../assets/logo.png'
 import Input from '../../components/Input'
+import Button from '../../components/button'
 
 const Signup = ({ navigation }) => {
   const formRef = useRef(null)
@@ -67,6 +67,7 @@ const Signup = ({ navigation }) => {
                 placeholder="Password"
                 returnKeyType="send"
               />
+              <Button>Create Account</Button>
             </Form>
           </Container>
         </ScrollView>
