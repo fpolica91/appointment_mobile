@@ -15,7 +15,8 @@ import {
   CreateAccountText,
 } from './styles'
 import { Form } from '@unform/mobile'
-import Input from '../../components/Input/input'
+import Input from '../../components/Input'
+import Button from '../../components/button'
 import LogoImage from '../../assets/logo.png'
 
 const Login = ({ navigation }) => {
@@ -64,6 +65,7 @@ const Login = ({ navigation }) => {
                 placeholder="Password"
                 returnKeyType="send"
               />
+              <Button>Sign In</Button>
             </Form>
           </Container>
         </ScrollView>

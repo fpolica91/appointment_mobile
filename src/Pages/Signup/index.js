@@ -11,7 +11,7 @@ import Icon from 'react-native-vector-icons/Feather'
 import { Form } from '@unform/mobile'
 import { Container, Title, BackToSignIn, BackToSignInText } from './styles'
 import LogoImage from '../../assets/logo.png'
-import Input from '../../components/Input/input'
+import Input from '../../components/Input'
 
 const Signup = ({ navigation }) => {
   const formRef = useRef(null)
