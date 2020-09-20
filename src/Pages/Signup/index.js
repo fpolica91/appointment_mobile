@@ -5,13 +5,14 @@ import {
     Image,
     Platform,
     ScrollView,
+    Text
 } from 'react-native'
 import { Form } from '@unform/mobile';
 import { Container, Title } from './styles'
 import LogoImage from '../../assets/logo.png'
 import Input from '../../components/Input/input'
 
-const Signup = () => {
+const Signup = ({ navigation }) => {
     const formRef = useRef(null);
     const emailRef = useRef(null);
     const passwordRef = useRef(null);
@@ -36,6 +37,9 @@ const Signup = () => {
                             <Input name="email" ref={emailRef} />
                             <Input name="password" ref={passwordRef} />
                         </Form>
+                        <View>
+                            <Text onPress={() => navigation.navigate('Login')}>Already an user? Sign In</Text>
+                        </View>
                     </Container>
                 </ScrollView>
             </KeyboardAvoidingView>

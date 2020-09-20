@@ -28,6 +28,7 @@ const Input = ({ name }) => {
                 onChangeText={(value) => (inputValueRef.current.value = value)}
                 keyboardAppearance="dark"
                 placeholderTextColor="#666360"
+                placeholder={fieldName}
             />
         </Container>
     )
