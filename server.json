@@ -1,0 +1,44 @@
+{
+  "barbers": [
+    {
+      "id": 1,
+      "title": "Pro Styles",
+      "address": "1900 Okeechobee Blvd, Suite 13",
+      "city": "West Palm Beach", 
+      "state": "Florida",
+      "image": "https://cdn2.coachmag.co.uk/sites/coachmag/files/styles/16x9_480/public/2018/02/how-to-style-hair.jpg?itok=u7RakZ6K&timestamp=1519728204"
+    },
+    {
+      "id": 2,
+      "title": "Pro Barbers",
+      "address": "1900 Fores Hill Blvd, Suite 13",
+      "city": "West Palm Beach", 
+      "state": "Florida",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT7peyizF131Fhg1PB-NXnZ1hd3_I9OxT-a4w&usqp=CAU"
+    },
+    {
+      "id": 3,
+      "title": "Shadow League",
+      "address": "1200 Wellington Trace, Suite 10a",
+      "city": "Wellington", 
+      "state": "Florida",
+      "image": "https://res.cloudinary.com/tsl/image/upload/s--etk_SWjH--/c_scale,w_600/v1585684985/vince_garcia-the_shop.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Boss Cutz",
+      "address": "1200 Fores Hill Blvd, Suite 13",
+      "city": "Wellington", 
+      "state": "Florida",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRde67uzA5zfpuPrZY-nVv8cBMUvzzrq-wSjQ&usqp=CAU"
+    },
+    {
+      "id": 6,
+      "title": "Barber Made",
+      "address": "1900 Fores Hill Blvd, Suite 13",
+      "city": "West Palm Beach", 
+      "state": "Florida",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRde67uzA5zfpuPrZY-nVv8cBMUvzzrq-wSjQ&usqp=CAU"
+    }
+  ]
+}

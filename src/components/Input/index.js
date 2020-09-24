@@ -43,7 +43,6 @@ const Input = ({ name, icon, ...rest }, ref) => {
 
   useImperativeHandle(ref, () => ({
     focus() {
-      console.log(inputElementRef, 'the input element')
       inputElementRef.current?.focus()
     },
   }))
