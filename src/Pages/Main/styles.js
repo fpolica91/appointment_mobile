@@ -13,7 +13,7 @@ export const Content = styled.SafeAreaView`
 `
 
 export const SearchInput = styled.TextInput`
-  margin: 20px 35px;
+  margin: 20px 20px;
   height: 50px;
   width: 340px;
   border-radius: 10px;
@@ -37,9 +37,7 @@ export const AvailableTodayTitle = styled.Text`
   padding: 9px 0;
   text-transform: uppercase;
   color: #fff;
-  /* margin-left: 15px;
-  margin-top: 5px;
-  font-family: Archivo_700Bold; */
+  margin-left: 15px;
 `
 
 export const HorizontaList = styled.FlatList``

@@ -14,28 +14,13 @@ import {
   FeatherIcon,
   Address,
 } from './styles'
-import { Text } from 'react-native'
 import data from '../../../server.json'
-// const barbers = JSON.parse(data)
-console.log(data.barbers)
-
-import axios from 'axios'
 
 const Main = () => {
   const [barbershops, setBarbershops] = useState([])
 
-  async function loadBarbers() {
-    // http://localhost:3000/barbers
-    try {
-      const response = await axios.get('http://127.0.0.1:3333/barbers')
-      setBarbershops(response.data)
-    } catch (err) {
-      console.log(err.message)
-    }
-  }
-
   useEffect(() => {
-    loadBarbers()
+    setBarbershops(data?.barbers)
   }, [])
 
   const distance = useMemo(() => {
@@ -57,7 +42,7 @@ const Main = () => {
             <AvailableTodayTitle>Recommended</AvailableTodayTitle>
             <HorizontaList
               horizontal
-              data={data?.barbers}
+              data={barbershops}
               keyExtractor={(shop) => String(shop.id)}
               renderItem={({ item }) => (
                 <ListContatiner>
@@ -78,7 +63,7 @@ const Main = () => {
             <AvailableTodayTitle>Available Today</AvailableTodayTitle>
             <HorizontaList
               horizontal
-              data={data?.barbers}
+              data={barbershops}
               keyExtractor={(shop) => String(shop.id)}
               renderItem={({ item }) => (
                 <ListContatiner>
