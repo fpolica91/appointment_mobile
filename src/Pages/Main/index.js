@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo, useRef } from 'react'
+import React, { useState, useEffect, useMemo } from 'react'
 import {
   Container,
   Content,
@@ -10,8 +10,11 @@ import {
   HorizontaList,
   AvailableToday,
   AvailableTodayTitle,
+  Recommended,
+  FeatherIcon,
+  Address,
 } from './styles'
-import { Image, Text } from 'react-native'
+import { Text } from 'react-native'
 
 import axios from 'axios'
 
@@ -32,6 +35,11 @@ const Main = () => {
     loadBarbers()
   }, [])
 
+  const distance = useMemo(() => {
+    const number = Math.floor(Math.random() * 3 + 1)
+    return number
+  }, [])
+
   return (
     <>
       <Container>
@@ -42,7 +50,7 @@ const Main = () => {
           />
         </Content>
         <Section>
-          <AvailableToday>
+          <Recommended>
             <AvailableTodayTitle>Recommended</AvailableTodayTitle>
             <HorizontaList
               horizontal
@@ -51,12 +59,17 @@ const Main = () => {
               renderItem={({ item }) => (
                 <ListContatiner>
                   <ProductImage source={{ uri: item.image }} />
-                  <Title>{item.title}</Title>
-                  <Text>{item.address}</Text>
+                  <Title>
+                    {item.title} <FeatherIcon name="scissors" />
+                  </Title>
+
+                  <Address>
+                    {distance}mi - {item.address}
+                  </Address>
                 </ListContatiner>
               )}
             />
-          </AvailableToday>
+          </Recommended>
 
           <AvailableToday>
             <AvailableTodayTitle>Available Today</AvailableTodayTitle>
@@ -67,8 +80,12 @@ const Main = () => {
               renderItem={({ item }) => (
                 <ListContatiner>
                   <ProductImage source={{ uri: item.image }} />
-                  <Title>{item.title}</Title>
-                  <Text>{item.address}</Text>
+                  <Title>
+                    {item.title} <FeatherIcon name="scissors" />{' '}
+                  </Title>
+                  <Address>
+                    {distance}mi - {item.address}
+                  </Address>
                 </ListContatiner>
               )}
             />

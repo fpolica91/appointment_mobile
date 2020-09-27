@@ -1,4 +1,5 @@
 import { View } from 'react-native'
+import Icon from 'react-native-vector-icons/Feather'
 
 import styled from 'styled-components/native'
 
@@ -12,8 +13,8 @@ export const Content = styled.SafeAreaView`
 `
 
 export const SearchInput = styled.TextInput`
-  margin: 30px 35px;
-  height: 56px;
+  margin: 20px 35px;
+  height: 50px;
   width: 340px;
   border-radius: 10px;
   background: #232129;
@@ -26,8 +27,11 @@ export const Section = styled.View`
   position: absolute;
   top: 150px;
 `
+export const Recommended = styled.View``
 
-export const AvailableToday = styled.View``
+export const AvailableToday = styled.View`
+  margin-top: 30px;
+`
 export const AvailableTodayTitle = styled.Text`
   font-size: 24px;
   color: #fff;
@@ -43,15 +47,26 @@ export const ListContatiner = styled(View)`
   padding: 10px;
   margin: 15px;
   border-radius: 10px;
-  width: 220px;
+  width: 270px;
 `
 export const ProductImage = styled.Image`
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 250px;
 `
 
 export const Title = styled.Text`
   font-size: 16px;
   font-weight: bold;
+  margin-bottom: 10px;
   font-family: Poppins_600SemiBold;
+`
+
+export const Address = styled.Text`
+  font-size: 12px;
+  color: #7f7f8b;
+`
+
+export const FeatherIcon = styled(Icon)`
+  font-size: 16px;
+  color: #232129;
 `
