@@ -13,7 +13,6 @@ import {
 } from './styles'
 import { Image, Text } from 'react-native'
 
-import api from '../../services/api'
 import axios from 'axios'
 
 const Main = () => {
@@ -37,7 +36,10 @@ const Main = () => {
     <>
       <Container>
         <Content>
-          <SearchInput />
+          <SearchInput
+            placeholder="Book your cut"
+            placeholderTextColor="#FFF"
+          />
         </Content>
         <Section>
           <AvailableToday>

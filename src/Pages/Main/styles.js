@@ -2,7 +2,10 @@ import { View } from 'react-native'
 
 import styled from 'styled-components/native'
 
-export const Container = styled.ScrollView``
+export const Container = styled.ScrollView`
+  flex: 1;
+  background-color: #312e38;
+`
 
 export const Content = styled.SafeAreaView`
   flex: 1;
