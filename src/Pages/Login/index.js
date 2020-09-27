@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useCallback } from 'react'
 import {
   KeyboardAvoidingView,
   View,
@@ -24,6 +24,11 @@ const Login = ({ navigation }) => {
   const emailRef = useRef(null)
   const passwordRef = useRef(null)
 
+  const focusPasswordInput = useCallback(() => {}, [])
+  const handleSignin = useCallback((data) => {
+    console.log(data)
+  })
+
   return (
     <>
       <KeyboardAvoidingView
@@ -40,12 +45,7 @@ const Login = ({ navigation }) => {
             <View>
               <Title>Login</Title>
             </View>
-            <Form
-              ref={formRef}
-              onSubmit={() => {
-                console.log('submitting')
-              }}
-            >
+            <Form ref={formRef} onSubmit={handleSignin}>
               <Input
                 autoCapitalize="none"
                 autoCorrect={false}
@@ -65,7 +65,9 @@ const Login = ({ navigation }) => {
                 placeholder="Password"
                 returnKeyType="send"
               />
-              <Button>Sign In</Button>
+              <Button onPress={() => formRef.current?.submitForm()}>
+                Sign In
+              </Button>
             </Form>
           </Container>
         </ScrollView>
