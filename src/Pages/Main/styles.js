@@ -33,11 +33,13 @@ export const AvailableToday = styled.View`
   margin-top: 30px;
 `
 export const AvailableTodayTitle = styled.Text`
-  font-size: 24px;
+  font-size: 14px;
+  padding: 9px 0;
+  text-transform: uppercase;
   color: #fff;
-  margin-left: 15px;
+  /* margin-left: 15px;
   margin-top: 5px;
-  font-family: Archivo_700Bold;
+  font-family: Archivo_700Bold; */
 `
 
 export const HorizontaList = styled.FlatList``

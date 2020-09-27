@@ -13,10 +13,21 @@ export default function UserRoutes() {
       tabBarOptions={{
         activeTintColor: '#fff',
         labelStyle: {
-          fontSize: 12,
+          fontSize: 11,
+          marginTop: 5,
         },
         style: {
+          height: 80,
           backgroundColor: '#232129',
+        },
+        iconStyle: {
+          flex: 0,
+          width: 20,
+          height: 20,
+        },
+        tabStyle: {
+          alignItems: 'center',
+          justifyContent: 'center',
         },
       }}
       initialRouteName="Main"

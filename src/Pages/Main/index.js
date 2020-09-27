@@ -15,6 +15,9 @@ import {
   Address,
 } from './styles'
 import { Text } from 'react-native'
+import data from '../../../server.json'
+// const barbers = JSON.parse(data)
+console.log(data.barbers)
 
 import axios from 'axios'
 
@@ -54,7 +57,7 @@ const Main = () => {
             <AvailableTodayTitle>Recommended</AvailableTodayTitle>
             <HorizontaList
               horizontal
-              data={barbershops}
+              data={data?.barbers}
               keyExtractor={(shop) => String(shop.id)}
               renderItem={({ item }) => (
                 <ListContatiner>
@@ -75,7 +78,7 @@ const Main = () => {
             <AvailableTodayTitle>Available Today</AvailableTodayTitle>
             <HorizontaList
               horizontal
-              data={barbershops}
+              data={data?.barbers}
               keyExtractor={(shop) => String(shop.id)}
               renderItem={({ item }) => (
                 <ListContatiner>
