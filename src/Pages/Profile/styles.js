@@ -40,7 +40,7 @@ export const UserNumber = styled.Text`
 
 export const Section = styled.ScrollView`
   border-radius: 10px;
-  margin-top: 15px;
+  margin-top: 30px;
 `
 export const Tab = styled.View`
   padding: 30px 25px;

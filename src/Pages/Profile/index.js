@@ -38,6 +38,15 @@ const Profile = () => {
           <Tab>
             <Item>
               <ItemContent>
+                <TouchableText>Gift Cards</TouchableText>
+                <Icon name="chevron-right" color="#000" size={18} />
+              </ItemContent>
+            </Item>
+          </Tab>
+
+          <Tab>
+            <Item>
+              <ItemContent>
                 <TouchableText>Payments</TouchableText>
                 <Icon name="chevron-right" color="#000" size={18} />
               </ItemContent>
